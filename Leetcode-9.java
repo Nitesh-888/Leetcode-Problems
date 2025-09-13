@@ -1,6 +1,4 @@
-package Problems;
-
-public class L9 {
+class L9 {
     public static int reverse(int x) {
         int rev=0;
         while(x!=0){

@@ -1,8 +1,6 @@
-package Problems;
-
 import java.util.Arrays;
 
-public class L567 {
+class L567 {
     public static boolean checkInclusion(String s1, String s2){
         //Sliding window approach
         int n1=s1.length();

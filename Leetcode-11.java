@@ -1,6 +1,4 @@
-package Problems;
-
-public class L11 {
+class L11 {
     public static int maxArea1(int[] height) {
         int maxar=0;
         for(int i=0; i<height.length; i++){

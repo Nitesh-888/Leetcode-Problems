@@ -1,6 +1,4 @@
-package Problems;
-
-public class L238 {
+class L238 {
     //brute force appproach but give TLE
     public static int[] productExceptSelf1(int[] nums) {
         int[] ans = new int[nums.length];

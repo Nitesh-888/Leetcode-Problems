@@ -1,6 +1,4 @@
-package Problems;
-
-public class L33 {
+class L33 {
     public static int Search(int[] nums, int target){
         int st=0;
         int end=nums.length-1;

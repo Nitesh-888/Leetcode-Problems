@@ -1,8 +1,5 @@
-package Problems;
-
 import java.util.Arrays;
-
-public class L204 {
+class L204 {
     public static int countPrime(int n) {
         //corner case
         if(n<=2) return 0;

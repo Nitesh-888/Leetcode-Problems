@@ -1,8 +1,5 @@
-package Problems;
-
 import java.util.Scanner;
-
-public class L50 {
+class L50 {
     public static double pow1(double x, int n) {
         double ans=1;
         if(n<0){

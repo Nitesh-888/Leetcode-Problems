@@ -1,6 +1,4 @@
-package Problems;
-
-public class L31 {
+class L31 {
     public static void nextPermutation(int[] nums) {
         int n=nums.length;
         int pvt=-1;

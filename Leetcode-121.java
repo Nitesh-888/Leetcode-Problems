@@ -1,5 +1,4 @@
-package Problems;
-public class L121 {
+class L121 {
     public static int maxProfit(int[] prices) {
         int buyPrice=prices[0];
         int maxProfit=0;

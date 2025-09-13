@@ -1,6 +1,4 @@
-package Problems;
-
-public class L852 {
+class L852 {
     public static int peakIndexInMountainArray(int[] arr) {
         for(int i=1; i<=arr.length-2; i++){
             if(arr[i] > arr[i-1] && arr[i] > arr[i+1]){

@@ -1,6 +1,4 @@
-package Problems;
-
-public class L75 {
+class L75 {
     public static void sortColors1(int[] nums) {
         int zero=0, one=0, two=0;
         for(int i=0; i<nums.length; i++){

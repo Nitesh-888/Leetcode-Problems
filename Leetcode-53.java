@@ -1,6 +1,4 @@
-package Problems;
-
-public class L53 {
+class L53 {
     // kadane's algorithm
     public static int maxSubArray(int[] nums) {
         int maxSum=Integer.MIN_VALUE;

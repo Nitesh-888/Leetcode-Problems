@@ -1,37 +1,40 @@
-package Problems;
-
-public class L443 {
-    public static int compress(char[] chars){
-        //corner case
-        if(chars.length==1) return 1;
-        int idx=0;
-        char curr=chars[0];
+class Leetcode443 {
+    public static int compress(char[] chars) {
+        int n=chars.length;
+        char prev=chars[0];
         int count=1;
-        for(int i=1; i<chars.length; i++){
-            if(chars[i]==curr){
+        int idx=0;
+        for(int i=1; i<n; i++){
+            char curr=chars[i];
+            if(curr==prev){
                 count++;
-                if(i==chars.length-1){
-                    chars[idx++]=curr;
-                    for(char c : Integer.toString(count).toCharArray()){
-                        chars[idx++]=c;
-                    }
-                }
             }else{
-                chars[idx++]=curr;
-                if(count!=1){
-                    for(char c : Integer.toString(count).toCharArray()){
-                        chars[idx++]=c;
+                chars[idx++]=prev;
+                if(count!=1) {
+                    if(count<=9){ 
+                        chars[idx++]=(char)(count+'0');
+                    }else{
+                        String cnt=String.valueOf(count);
+                        for(char ch : cnt.toCharArray()){
+                            chars[idx++]=ch;
+                        }
                     }
                 }
-                curr=chars[i];
                 count=1;
-                if(i==chars.length-1){
-                    chars[idx++]=curr;
-                }
-                
+            }
+            prev=curr;
+        }
+        chars[idx++]=prev;
+        if(count==1) return idx;
+        
+        if(count<=9){ 
+            chars[idx++]=(char)(count+'0');
+        }else{
+            String cnt=String.valueOf(count);
+            for(char ch : cnt.toCharArray()){
+                chars[idx++]=ch;
             }
         }
-
         return idx;
     }
     public static void printArray(char [] n){

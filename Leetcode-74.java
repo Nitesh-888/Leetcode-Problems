@@ -1,6 +1,4 @@
-package Problems;
-
-public class L74 {
+class L74 {
     public static boolean Search(int[][] n, int target) {
         int rows=n.length;
         int col=n[0].length;

@@ -1,6 +1,4 @@
-package Problems;
-
-public class L125 {
+class L125 {
     public static boolean isPalindrome(String s) {
         StringBuilder ans=new StringBuilder();
         s=s.toLowerCase();

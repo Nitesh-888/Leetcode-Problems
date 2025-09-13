@@ -1,6 +1,4 @@
-package Problems;
-
-public class L540 {
+class L540 {
     public static int singleNonDuplicate(int[] nums) {
         int n=nums.length;
         int st=1;

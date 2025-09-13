@@ -1,7 +1,5 @@
-package Problems;
 import java.util.Arrays;
-
-public class L169 {
+class L169 {
     //brute force
     public static int majority1(int[] nums){
         int ans=0;

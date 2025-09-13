@@ -1,6 +1,4 @@
-package Problems;
-
-public class L1910 {
+class L1910 {
     public static int findOccurrence(StringBuilder s, String part){
         int partIdx=0;
         for(int i=0; i<s.length(); i++){

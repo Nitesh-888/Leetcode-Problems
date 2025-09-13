@@ -1,6 +1,4 @@
-package Problems;
-
-public class L88 {
+class Leetcode88 {
     public static void merge1(int[] nums1, int m, int[] nums2, int n) {
         for(int i=0; i<n; i++){
             int curr=nums2[i];

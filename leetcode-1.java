@@ -1,6 +1,4 @@
-package Problems;
-
-public class L1 {
+class L1 {
     //brute force
     public static int[] pairSum1(int n[], int target){
         int[] ans=new int[2];

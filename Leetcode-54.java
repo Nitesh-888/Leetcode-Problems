@@ -1,9 +1,6 @@
-package Problems;
-
 import java.util.ArrayList;
 import java.util.List;
-
-public class L54 {
+class L54 {
     public static List<Integer> Spiral(int n[][]){
         List<Integer> ans=new ArrayList<>();
         int fr=0, lr=n.length-1;
